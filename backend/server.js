@@ -9,6 +9,8 @@ app.use(express.json());
 app.use(morgan('common'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
+app.use('/api/posts', require('./routes/post'));
+
 
 
 const port = 5000;
